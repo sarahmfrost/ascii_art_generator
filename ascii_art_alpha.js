@@ -31,7 +31,8 @@ var Alpha = {
     z: ['ZZZZ','  Z ',' Z  ',' Z  ','ZZZZ']
 };
 
-//This converts user's input to lowercase
+//This converts user's input to lowercase so the program
+//can handle uppercase and lowercase input
 userText = (process.argv[2])
 LowerUserText = userText.toLowerCase();
 
@@ -40,7 +41,8 @@ FML(LowerUserText)
 
 
 //this portion of the function takes the user's input and converts it to a two dimensional array
-
+//a new array is created called "line" that holds the object keys
+//related to the letters of the user input
 line = [];
 
 function FML (text){
@@ -53,6 +55,7 @@ function FML (text){
 
 console.log('\n')
 
+
 //This section iterates through the five horizontal lines of each
 //letter in the user input
 
@@ -63,6 +66,10 @@ for (i=0; i<5; i++) {
 
 //this for loop is for the letters in the user input
 //which has been put in the array "line"
+
+//process.stdout.write is equivelent to console.log, without
+//the \n that console.log adds
+
 
     for (k=0; k<line.length; k++) {
         process.stdout.write(line[k][i] + ' ');
