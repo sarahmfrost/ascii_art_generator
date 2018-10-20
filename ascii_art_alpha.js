@@ -37,7 +37,7 @@ userText = (process.argv[2])
 LowerUserText = userText.toLowerCase();
 
 //Function is called with user input all in lower case
-FML(LowerUserText)
+Ascii(LowerUserText)
 
 
 //this portion of the function takes the user's input and converts it to a two dimensional array
@@ -45,7 +45,7 @@ FML(LowerUserText)
 //related to the letters of the user input
 line = [];
 
-function FML (text){
+function Ascii (text){
     var line =[]
     for (i = 0; i < text.length; i++){
         line.push(Alpha[text[i]])
