@@ -1,7 +1,10 @@
 // Sarah Frost's ascii art project for DANM 220
 
 //this is an object of arrays
-//each letter is a key - and the array of lines is the value
+
+//an object is a collection of properties
+//property is an association between a key and a value
+
 var Alpha = {
     a: ['AAAA','A  A','AAAA','A  A','A  A'],
     b: ['BBBB', 'B  B','BBBB','B  B','BBBB'],
